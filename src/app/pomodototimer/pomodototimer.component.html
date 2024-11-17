@@ -1,0 +1,19 @@
+<div class="box">
+    <div>
+        <!-- Botón para iniciar Pomodoro (30 minutos) -->
+        <button (click)="cambiarModo('pomodoro')" class="btnv2">Pomodoro</button>
+
+        <!-- Botón para iniciar Descanso (5 minutos) -->
+        <button (click)="cambiarModo('descanso')" class="btnv2">Descanso</button>
+    </div>
+
+    <div class="cronometro">
+        <h1>{{ tiempoFormateado }}</h1>
+
+        <div class="botones">
+            <button (click)="iniciar()" [disabled]="enMarcha" class="btn">Iniciar</button>
+            <button (click)="pausar()" [disabled]="!enMarcha" class="btn">Pausar</button>
+            <button (click)="reiniciar()" class="btn">Reiniciar</button>
+        </div>
+    </div>
+</div>

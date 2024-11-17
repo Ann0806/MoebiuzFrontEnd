@@ -1,0 +1,64 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.spacer {
+    flex: 1 1 auto;
+    /* Ocupará todo el espacio disponible */
+}
+
+.btn {
+    align-items: center !important;
+    margin-left: 1% !important;
+    width: auto;
+    padding: 5px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #DCEFFA;
+    color: black;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-b {
+    margin-left: 1% !important;
+    align-items: center !important;
+    width: auto;
+    padding: 5px;
+    background-color: #DCDCFA;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.btn-b:hover {
+    background-color: #d2d6d8;
+    color: black;
+}
+
+.btn-b:focus {
+    outline: none;
+}
+
+
+.spacer {
+    flex: 1 1 auto;
+}

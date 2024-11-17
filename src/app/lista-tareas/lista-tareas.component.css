@@ -1,0 +1,99 @@
+
+:host {
+    display: block;
+    height: 100vh; 
+    width: 100%;
+    background-color: #F1F3F6; 
+}
+
+
+html, body {
+    background-color: #F1F3F6 !important; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+.texting{
+
+    width: 100%;
+    height: auto;
+    align-content: center;
+    align-items: center;
+}
+
+/* Otros estilos */
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #F1F3F6 !important;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+}
+
+.box-2 {
+    position: absolute;
+    top: 20%;
+    /* transform: translateX(-53%); */
+    width: 40vw;
+    /* max-width: 400px; */
+    height: 50%;
+    background-color: #F1F3F6;
+    /* box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    /* transform: translateX(-53%); */
+    width: 52vw;
+    /* max-width: 400px; */
+    height: 85vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+/* Estilo de los botones */
+.btn {
+    align-items: center !important;
+    width: 60%;
+    padding: 15px;
+    background-color: #65558F;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #DCEFFA;
+    color: black;
+}
+
+.btn:focus {
+    outline: none;
+}
