@@ -11,6 +11,11 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -20,15 +25,17 @@ import { MatIconModule } from '@angular/material/icon';
     LoginComponent,
     PomodototimerComponent,
     TareasComponent,
-    ListaTareasComponent, 
+    ListaTareasComponent,
     AppRoutingModule,
     ToolbarComponent,
     MatToolbarModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatSelectModule,
     MatIconModule,
+    MatDatepickerModule, MatNativeDateModule
   ],
   providers: [],
-//   bootstrap: [AppComponent],
+  //   bootstrap: [AppComponent],
 })
 export class AppModule { }

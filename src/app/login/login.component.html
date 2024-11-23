@@ -1,18 +1,22 @@
-<div class="container">
-    <div class="box">
-        <div>
-            <h1 class="title">Inicio sesión</h1>
+<div>
+    <div class="container">
+        <div class="box">
+            <div>
+                <h1 class="title">Inicio sesión</h1>
+            </div>
+            <div class="texting">
+                <mat-form-field appearance="outline">
+                    <mat-label>Correo electrónico</mat-label>
+                    <input matInput type="email" placeholder="Ingrese el correo">
+                </mat-form-field>
 
-        </div>
-        <div class="texting">
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="Correo electrónico" type="email">
-            </mat-form-field>
 
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="Contraseña" type="password">
-            </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput placeholder="Contraseña" type="password">
+                </mat-form-field>
+            </div>
+            <button class="btn" [routerLink]="['/lista-tareas']">Iniciar sesión</button>
         </div>
-        <button class="btn" [routerLink]="['/lista-tareas']">Iniciar sesión</button>
     </div>
 </div>

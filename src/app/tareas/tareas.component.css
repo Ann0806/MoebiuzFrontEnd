@@ -1,6 +1,85 @@
 :host {
-    display: block;
-    height: 100vh; 
-    width: 100%;
-    background-color: #F1F3F6 !important; 
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: #F1F3F6 !important;
+}
+
+
+.title {
+  align-content: center;
+  padding: 1%;
+  text-align: center;
+  width: auto;
+  height: auto;
+  position: relative;
+  font-size: 60px;
+}
+
+.box {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  background-color: #ffffff;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #F5F5F5;
+}
+
+.form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* Espaciado entre filas */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  /* Espaciado entre campos */
+}
+
+.form-row mat-form-field {
+  flex: 1;
+  /* Todos los campos tendrán el mismo ancho */
+}
+
+.descripcion {
+  justify-content: center;
+  /* Centrar la descripción */
+}
+
+.buttonrow {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.mat-input-grande {
+  width: 80%;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #FAE1DC;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 30%;
 }

@@ -1,1 +1,66 @@
-<p>tareas works!</p>
+<div>
+  <div class="title">
+    <h1 style="padding-top: 1%; font-size: 40px;">Añadir tarea</h1>
+  </div>
+  <div class="box">
+    <!-- Enlace del formulario reactivo -->
+    <form [formGroup]="taskForm" (ngSubmit)="onGuardar()" class="form-container">
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="nombre" required placeholder="Ingrese el nombre de la tarea">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Prioridad</mat-label>
+          <mat-select formControlName="prioridad" placeholder="Seleccione una prioridad">
+            <mat-option *ngFor="let prioridad of prioridades" [value]="prioridad">{{ prioridad }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Tiempo trabajado</mat-label>
+          <input matInput formControlName="tiempoTrabajado" required placeholder="Ingrese el tiempo">
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Seleccione una fecha límite</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="fechaLimite">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Estado</mat-label>
+          <mat-select formControlName="estado" placeholder="Seleccione un estado">
+            <mat-option *ngFor="let estado of estados" [value]="estado">{{ estado }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Proyecto</mat-label>
+          <mat-select formControlName="proyecto" placeholder="Seleccione un proyecto">
+            <mat-option *ngFor="let proyecto of proyectos" [value]="proyecto">{{ proyecto }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row descripcion">
+        <mat-form-field appearance="outline" class="mat-input-grande">
+          <mat-label>Descripción</mat-label>
+          <textarea matInput formControlName="descripcion" placeholder="Escribe una descripción de la tarea"
+            rows="3"></textarea>
+        </mat-form-field>
+      </div>
+
+
+      <div class="buttonrow">
+        <button mat-raised-button color="primary" type="submit">Guardar</button>
+      </div>
+
+    </form>
+  </div>
+</div>
